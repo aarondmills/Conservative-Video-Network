@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: MyString
+  panda_video_id: MyString
+  description: MyText
+  category_id: 1
+
+two:
+  title: MyString
+  panda_video_id: MyString
+  description: MyText
+  category_id: 1

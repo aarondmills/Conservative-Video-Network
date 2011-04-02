@@ -1,4 +1,8 @@
 Cvn::Application.routes.draw do
+  resources :categories
+
+  resources :videos
+
   resources :articles
 
   devise_for :users
