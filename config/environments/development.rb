@@ -22,5 +22,6 @@ Cvn::Application.configure do
 
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
+ENV['PANDASTREAM_URL'] = "http://96531c2f20b0d616eedc:0e5ec4e1c971f705b6bc@api.pandastream.com:80/9325450cea49331a6500d187ca25dd60"
 end
 
