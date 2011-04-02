@@ -16,6 +16,7 @@ class VideosController < ApplicationController
     @video = Video.find(params[:id])
 		@original_video = @video.panda_video
 		@h264_encoding = @original_video.encodings.find_by_profile_name("h264")
+		@ogg_encoding = @original_video.encodings.find_by_profile_name("ogg")
 
     respond_to do |format|
       format.html # show.html.erb
