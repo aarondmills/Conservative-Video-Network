@@ -1,29 +1,13 @@
-<h1>Listing videos</h1>
+<h1>Videos</h1>
 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Panda video</th>
-    <th>Description</th>
-    <th>Category</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
 
 <% @videos.each do |video| %>
-  <tr>
-    <td><%= video.title %></td>
-    <td><%= video.panda_video_id %></td>
-    <td><%= video.description %></td>
-    <td><%= video.category_id %></td>
-    <td><%= link_to 'Show', video %></td>
-    <td><%= link_to 'Edit', edit_video_path(video) %></td>
-    <td><%= link_to 'Destroy', video, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+<p style="width:250px;"><%= video.title %><br />
+<img src="%= @h264_encoding.screenshots.first %>" />
+<%= video.description %><br />
+<%= link_to 'More', video %> | <%= link_to 'Edit', edit_video_path(video) %> | <%= link_to 'Delete', video, :confirm => 'Are you sure?', :method => :delete %></p>
 <% end %>
-</table>
 
 <br />
 
-<%= link_to 'New Video', new_video_path %>
+<%= link_to 'Submit A New Video', new_video_path %>
