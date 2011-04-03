@@ -3,7 +3,7 @@
 
 <% @videos.each do |video| %>
 <p style="width:250px;"><%= video.title %><br />
-<img src="%= @h264_encoding.screenshots.first %>" />
+<img src="<%= @h264_encoding.screenshots.first %>" />
 <%= video.description %><br />
 <%= link_to 'More', video %> | <%= link_to 'Edit', edit_video_path(video) %> | <%= link_to 'Delete', video, :confirm => 'Are you sure?', :method => :delete %></p>
 <% end %>
