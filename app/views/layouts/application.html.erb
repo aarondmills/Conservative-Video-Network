@@ -1,19 +1,254 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <title>Cvn</title>
-  <%= stylesheet_link_tag :all %>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Conservative Video Network</title>
+
+  <%= stylesheet_link_tag 'style2.css' %>
+	<!--[if IE 7]>
+		<%= stylesheet_link_tag 'ie7.css' %>
+	<![endif]-->
 
   <%= javascript_include_tag :defaults %>
 	<%= javascript_include_tag 'http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js' %>  
   <%= javascript_include_tag '/panda_uploader/jquery.panda-uploader-1.3.0.min.js' %>
 	<%= javascript_include_tag 'swfobject' %>
+	<%= javascript_include_tag 'settings.js' %>
+	<%= javascript_include_tag 'jquery-1.4.2.min.js' %>
+	<%= javascript_include_tag 'overallmenu.js' %>
+	<%= javascript_include_tag 'jquery.cycle.min.js' %>
+	<%= javascript_include_tag 'jquery.prettyPhoto.js' %>
+	<%= javascript_include_tag 'cufon-yui.js' %>
+	<%= javascript_include_tag 'Futura_Bk_BT_400.font.js' %>
 
   <%= csrf_meta_tag %>
+
+<!--[if IE 6]>
+<%= javascript_include_tag 'DD_belatedPNG_0.0.8a-min.js' %>
+	<script>
+		DD_belatedPNG.fix('img, div');
+	</script>
+<![endif]-->
 </head>
 <body>
 
+<!-- begin header -->
+<div class="header">
+	<div class="header_container">
+
+		
+		<!-- begin logo -->
+		<div class="header_logo">
+			<a href="index.html"><img src="images/logo.png" alt="" /></a>
+		</div>
+		<!-- end logo -->
+		
+		<!-- begin menu -->
+		<div class="overallmenu clearfix">
+			<ul class="overallmenu clearfix">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="page.html">Pages</a>
+					<ul class="sub-menu">
+						<li><a href="page_with_sidebar.html">Page with Sidebar</a></li>
+						<li><a href="full_width_page.html">Full Width Page</a></li>
+						<li><a href="bonus_layout_1.html">Bonus Layouts</a>
+							<ul class="sub-menu">
+								<li><a href="bonus_layout_1.html">Bonus Layout 1</a></li>
+								<li><a href="bonus_layout_2.html">Bonus Layout 2</a></li>
+								<li><a href="bonus_layout_3.html">Bonus Layout 3</a></li>
+								<li><a href="bonus_layout_4.html">Bonus Layout 4</a></li>
+								<li><a href="bonus_layout_5.html">Bonus Layout 5</a></li>
+							</ul>
+						</li>
+						<li><a href="testimonials.html">Testimonials Page</a></li>
+					</ul>
+				</li>
+				<li><a href="portfolio_column_3.html">Portfolio</a>
+					<ul class="sub-menu">
+						<li><a href="portfolio_column_1.html">1 Column</a></li>
+						<li><a href="portfolio_column_2.html">2 Columns</a></li>
+						<li><a href="portfolio_column_3.html">3 Columns</a></li>
+						<li><a href="portfolio_column_4.html">4 Columns</a></li>
+						<li><a href="portfolio_column_5.html">5 and More Columns</a></li>
+						<li><a href="video_gallery.html">Video gallery</a></li>
+					</ul>
+				</li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li class="current_page_item"><a href="shortcodes.html">Shortcodes</a>
+					<ul class="sub-menu">
+						<li><a href="buttons_checklists.html">Buttons &#038; Checklists</a></li>
+						<li class="current_page_item"><a href="column_layouts.html">Column Layouts</a></li>
+						<li><a href="image_frames.html">Image Frames</a></li>
+						<li><a href="info_boxes.html">Box Styles</a></li>
+						<li><a href="dropcap.html">Drop-Cap &#038; Block Quotes</a></li>
+						<li><a href="typography.html">Typography</a></li>
+						<li><a href="testimonials_shortcode.html">Testimonials</a></li>
+						<li><a href="others.html">Other Styles</a></li>
+					</ul>
+				</li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>		
+		<!-- end menu -->
+		
+	</div>
+</div>
+<!-- end header -->
+<div class="page_top">
+	<div class="page_top_container">
+	
+		<div class="page_top_content ">
+			<span class="page_top_title">Columns Layouts</span><br />
+			<span class="page_top_desc clearfix">Lets take a look Column Layouts</span>
+		</div>
+		
+		<div class="page_top_search">
+			<form action="" id="searchform" method="get">
+				<div><input name="s" id="s" type="text" onblur="if ( this.value == '' ) this.value = this.defaultValue" onfocus="if ( this.value == this.defaultValue ) this.value = '';" value="Enter your search keywords..." /></div>
+			</form>
+		</div>
+		
+	</div>
+</div>
+
+<!-- begin container -->
+<div class="page_container_bg">
+	<div class="page_full_container">
+
+		<div class="page_full_content">
+		
+			
+
+
 <%= yield %>
 
+
+
+
+
+</div>
+	</div>
+</div>
+<!-- end container -->
+
+
+
+<!-- begin footer -->
+<div class="footer">
+
+	<!-- begin widgets -->
+	<div class="footer_widget">
+		<div class="footer_widgets clearfix">
+		
+			<!-- begin left widget -->
+			<div class="footer_widgetleft">
+			
+				<h3>OverAll Pages</h3>
+				<div class="footer_menu">
+					<ul class="footer_menu">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="page.html">Pages</a></li>
+						<li><a href="portfolio_column_3.html">Portfolio</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="shortcodes.html">Shortcodes</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="#">More Link</a></li>
+					</ul>
+				</div>
+				
+			</div>
+			<!-- end left widget -->
+			
+			<!-- begin center widget -->
+			<div class="footer_widgetcenter">
+				
+				<div class="footer_widgetcenter_top">
+					<h3>Easy installation and upgrades</h3>
+					<img src="images/icons/footer_started.png" class="alignleft" alt="" />We have gone to great lengths too make sure every bit of the WordPress generated code is in full compliance with the standards of the <a href="http://www.w3.org/">W3C</a> This is important only a interoperability with today browser but also for forward compatibility with the tools the next generation. Your web site is a beautiful thing...				
+				</div>	
+			
+				<div class="footer_widgetcenter_left">
+					<h3>Recent Comments</h3>
+					<div class="footer_comments">
+						<ul>
+							<li><a href="">admin</a> on <a href="#">Spam protection</a></li>
+							<li><a href="">dilna</a> on <a href="#">Spam protection</a></li>
+							<li><a href="http://themeforest.net/user/Codestar">Codestar</a> on <a href="#">Spam protection</a></li>
+							<li><a href="">feng</a> on <a href="#">Spam protection</a></li>						
+						</ul>
+					</div>
+				</div>
+			
+				<div class="footer_widgetcenter_right">
+					<h3>Popular Posts</h3>
+					<div class="footer_posts">
+						<ul>
+							<li><a href="#">Spam protection</a></li>
+							<li><a href="#">Hello world!</a></li>
+							<li><a href="#">Lorem Ipsum dummy!</a></li>
+							<li><a href="#">It is a long established</a></li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+			<!-- end center widget -->
+
+			<!-- begin right widget -->
+			<div class="footer_widgetright">
+				<div class="footer_widget_firstly">
+					<h3>Connect with the Community</h3>
+					<img class="alignleft" src="images/icons/footer_wordpress.png" alt=""/>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when a unknown printer took galley of type and make.						
+				</div>
+				
+				<div class="footer_widget_firstly">
+					<h3>Contact Informations</h3>
+					<div class="footer_contact">
+						<ul>
+							<li class="address">28. Freelancer Street No:109/21, City Ankara / TURKEY</li>
+							<li class="phone">(+90) 312 444 0 444 &amp; (+90) 312 443 0 443</li>
+							<li class="email"><a href="mailto:info@codestarlive.com">info@codestarlive.com</a> &amp; <a href="mailto:help@codestarlive.com">helper@codestarlive.com</a></li>
+							<li class="support"><a href="contact.html">Over'ALL Support Service</a></li>
+						</ul>							
+					</div>
+				</div>
+	
+			</div>
+			<!-- end right widget -->
+
+		</div>
+	</div>
+	<!-- end widgets -->
+	
+	<!-- begin copyright -->
+	<div class="footer_copyright">
+		<div class="copyright_container">
+			<div class="copyright_text">Copyright (c) 2009 - 2010 OverAll Inc. - Premium a WebSite Theme for Your Website - All Rights Reserved</div>
+			<div class="footer_social_networks">
+				<ul>
+					<li><a href="http://twitter.com/"><img src="images/social_networks/twitter.png" alt="" /></a></li>
+					<li><a href="http://facebook.com/"><img src="images/social_networks/facebook.png" alt="" /></a></li>
+					<li><a href="http://blogger.com/"><img src="images/social_networks/blogger.png" alt="" /></a></li>
+					<li><a href="http://flickr.com/"><img src="images/social_networks/flickr.png" alt="" /></a></li>
+					<li><a href="http://wordpress.org/"><img src="images/social_networks/wordpress.png" alt="" /></a></li>
+					<li><a href="http://vimeo.com/"><img src="images/social_networks/vimeo.png" alt="" /></a></li>
+					<li><a href="http://linkedin.com/"><img src="images/social_networks/linkedin.png" alt="" /></a></li>
+					<li><a href="http://myspace.com/"><img src="images/social_networks/myspace.png" alt="" /></a></li>
+					<li><a href="http://technorati.com/"><img src="images/social_networks/technorati.png" alt="" /></a></li>
+					<li><a href="http://skype.com/"><img src="images/social_networks/skype.png" alt="" /></a></li>
+					<li><a href="#"><img src="images/social_networks/rss.png" alt="" /></a></li>
+				</ul>			
+			</div>
+		</div>
+	</div>
+	<!-- end copyright -->
+	
+</div>
+<!-- end footer -->
+
+<script type="text/javascript" src="js/custom.js"></script> 
+<script type="text/javascript">Cufon.now();</script>
 </body>
 </html>

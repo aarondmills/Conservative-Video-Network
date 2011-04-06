@@ -1,13 +1,11 @@
-<h1>Videos</h1>
-
-
+<h1>Latest Videos</h1>
 <% @videos.each do |video| %>
-<p style="width:250px;"><%= video.title %><br />
-<img src="<%= video.panda_video.screenshots.first %>" />
-<%= video.description %><br />
+<div class="basic_columns one_fourth">
+				<h2><%= video.title %></h2>
+				<img src="<%= video.panda_video.screenshots.first %>" />
+<p><%= video.description %><br />
 <%= link_to 'More', video %> | <%= link_to 'Edit', edit_video_path(video) %> | <%= link_to 'Delete', video, :confirm => 'Are you sure?', :method => :delete %></p>
+			</div>
 <% end %>
-
-<br />
 
 <%= link_to 'Submit A New Video', new_video_path %>
